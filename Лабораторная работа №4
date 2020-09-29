@@ -1,0 +1,89 @@
+#include <iostream> //Задача №1
+#include <string>
+using namespace std;
+
+int main() {
+
+setlocale(LC_ALL, "Russian");
+double a,b;
+cin >> a;
+cin >> b;
+double S= a*b;
+double P= 2*(a+b);
+cout << "Площадь прямоугольника =" << S << endl;
+cout << "Периметр прямоугольника=" << P << endl;
+return 0;
+} 
+
+#include <iostream> //Задача №2
+#include <string>
+using namespace std;
+
+int main() {
+
+setlocale(LC_ALL, "Russian");
+double d;
+cin >> d;
+double L= 3.14*d;
+cout << "Длина окружности =" << L << endl;
+return 0;
+}
+
+#include <iostream> //Задача №3
+#include <string>
+using namespace std;
+
+int main() {
+
+setlocale(LC_ALL, "Russian");
+
+double a,b, L;
+cin » a;
+cin » b;
+L= (a+b)/2;
+cout << "Среднее арифметическое =" << L << endl;
+
+return 0;
+}
+
+#include <iostream> //Задание №4
+#include <string>
+using namespace std;
+
+int main() {
+
+setlocale(LC_ALL, "Russian");
+
+double a,b;
+cin >> a;
+cin >> b;
+
+cout << "Произведение =" << a*a*b*b << endl;
+cout << "Сумма =" << a*a+b*b << endl;
+cout << "Разность =" << a*a-b*b << endl;
+
+return 0;
+}
+
+#include <iostream> //Задание №5
+#include <string>
+using namespace std;
+
+int main() {
+
+setlocale(LC_ALL, "Russian");
+
+double a, b;
+cin >> a >> b;
+
+double P = abs(a)*abs(b);
+cout << "Произведение ="<< P << endl;
+
+double S = abs(a) + abs(b);
+cout << "Сумма =" << S << endl;
+
+double R = abs(a) - abs(b);
+cout << "Разность =" << R << endl;
+
+return 0;
+}
