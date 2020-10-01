@@ -1,0 +1,100 @@
+#include <iostream> //Задание №1
+#include <cmath>
+ 
+using namespace std;
+ 
+int main()
+{
+    setlocale(LC_ALL,"Russian");
+    int x1,y1,x2,y2;
+    
+    cin >> x1 >> y1 >> x2 >> y2;
+    
+    double r= sqrt ((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+    cout <<"Расстояние= " << r<< endl;
+ 
+    return 0;
+}
+
+#include <iostream> //Задание №2
+#include <cmath>
+ 
+using namespace std;
+ 
+int main()
+{
+    setlocale(LC_ALL,"Russian");
+    int a,b,c;
+    
+    cin >> a >> b >> c;
+    int ac= abs (c-a);
+    int bc= abs (c-b);
+    int s= ac+bc;
+    
+    cout << s<< endl;
+ 
+    return 0;
+}
+
+
+#include <iostream> //Задание №3
+#include <cmath>
+ 
+using namespace std;
+ 
+int main()
+{
+    setlocale(LC_ALL,"Russian");
+    int a,b,c;
+    
+    cin >> a >> b >> c;
+    int ac= abs (c-a);
+    int bc= abs (c-b);
+    int r= ac*bc;
+    
+    cout << r<< endl;
+ 
+    return 0;
+}
+
+#include <iostream> //Задание №4
+#include <cmath>
+ 
+using namespace std;
+ 
+int main()
+{
+    setlocale(LC_ALL,"Russian");
+    int x1,y1,x2,y2;
+    
+    cin >> x1 >> y1 >> x2 >> y2;
+    
+    double a= sqrt ((y2-y1)*(y2-y1));
+    double b= sqrt ((x2-x1)*(x2-x1));
+    cout <<"Периметр= " << (a+b)*2 << endl;
+    cout <<"Площадь= " <<b*a << endl;
+ 
+    return 0;
+}
+
+#include <iostream> //Задание №5
+#include <cmath>
+using namespace std;
+
+int main() {
+
+setlocale(LC_ALL, "Russian");
+
+double x1,y1,x2,y2,x3,y3,a,b,c;
+cin >> x1 >> y1 >> x2 >> y2 >> x3 >> y3;
+
+a=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+b=sqrt((x3-x1)*(x3-x1)+(y3-y1)*(y3-y1));
+c=sqrt((x2-x3)*(x2-x3)+(y2-y3)*(y2-y3));
+double P=a+b+c; 
+double S= 0.5*(abs((x2-x1)*(y3-y1)-(x3-x1)*(y2-y1)));
+
+cout << "Площадь треугольника= " << S << endl;
+cout << "Периметр треугольника= " << P << endl;
+return 0;
+}
