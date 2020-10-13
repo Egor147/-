@@ -1,0 +1,122 @@
+#include <iostream> //Задание №1
+
+using namespace std;
+
+int main()
+{
+double a,b,c;
+
+cin >> a >> b;
+c=a;
+a=b;
+b=c;
+
+cout << a <<" " << b;
+
+return 0;
+}
+
+#include <iostream> //Задание №2
+
+using namespace std;
+
+int main()
+{
+double a,b,c,t;
+
+cin >> a >> b >> c;
+t=a;
+a=c;
+c=b;
+b=t;
+cout << a << "  " << b << "  " << c;
+
+return 0;
+} 
+
+#include <iostream> //Задание #3
+
+using namespace std;
+
+int main()
+{
+double a,b,c,t;
+
+cin >> a >> b >> c;
+t=a;
+a=b;
+b=c;
+c=t;
+cout << a << "  " << b << "  " << c;
+
+return 0;
+} 
+
+#include <iostream> //Задание №4
+
+using namespace std;
+
+int main()
+{
+double x;
+
+cin >> x;
+double z=x*x;
+
+double y=3*z*z*z - 6*z -7;
+
+cout << y;
+
+return 0;
+}
+
+#include <iostream> //Задание №5
+
+using namespace std;
+int main()
+{
+double x;
+
+cin >> x;
+double z=(x-3)*(x-3);
+
+double y=4*z*z*z-7*z*(x-3)+2;
+
+cout << y;
+
+return 0;
+}
+
+#include <iostream> //Задание №6
+
+using namespace std;
+
+int main()
+{
+double x;
+
+cin >> x;
+double z=x*x;
+x=z*z;
+z=f*f;
+cout << z;
+
+return 0;
+}
+
+#include <iostream> //Задание №7
+
+using namespace std;
+
+int main()
+{
+double x;
+
+cin >> x;
+double z=x*x;
+double f=z*z*x;
+z=f*f*f;
+cout << z;
+
+return 0;
+}
