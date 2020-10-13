@@ -1,0 +1,125 @@
+#include <iostream>//Задание №1
+
+using namespace std;
+
+int main()
+{
+double a;
+
+cin >> a;
+double z= (a*3.14)/180;
+
+cout << z;
+
+return 0;
+} 
+
+#include <iostream>//Задание №2
+
+using namespace std;
+
+int main()
+{
+double a;
+
+cin >> a;
+double z= (a*180)/3.14;
+cout << z;
+
+return 0;
+}
+
+#include <iostream> //Задание №3
+
+using namespace std;
+
+int main()
+{
+int x,y;
+double a,s1,sy; //s1-стоимость 1 кг. sy-стоимость y кг.
+cin >> x >>a >>y;
+s1=a/x;
+sy=y*s1;
+
+cout«"стоимость 1кг= " « s1 « endl;
+cout«"Стоимость "<< y <<" кг=" << sy;
+
+return 0;
+}
+
+#include <iostream> //	Задание №4
+
+using namespace std;
+
+int main()
+{
+    double v1,v2,s,t,sp;
+    cin >> v1 >> v2 >> s >> t;
+    sp=s+(v1*t)+(v2*t);
+    cout << sp;
+    
+    return 0;
+}
+
+#include <iostream> //Задание №5
+
+using namespace std;
+
+int main()
+{
+    double a,b,x;
+    cin >> a >> b;
+    if (b==0) {
+        cout << "x=0";
+    } else {
+        x=b/a;
+        cout <<"x=" << x;
+    }
+
+#include <iostream> //Задание №6
+
+using namespace std;
+
+int main()
+{
+    double a1,b1,a2,b2,c1,c2,x=0.0000001,y=0.0000001;
+    cin >>a1>>a2>>b1>>b2>>c1>>c2;
+    if (a1!=0) {
+        if (b2!=0){
+            if (b1==0){ //
+                x=c1/a1;
+                y=(c2-a2*x)/b2;
+            } else if(a2!=0){
+                y=(c2*a1-a2*c1)/(b2*a1-b1*a2);
+                x=(c1-b1*y)/a1;
+            } else {
+                y=c2/b2;
+                x=(c1-b1*y)/a1;
+            }
+        } else {
+            if (b1!=0) {
+                if (a2!=0) {
+                    x=c2/a2;
+                    y=(c1-a1*x)/b1;
+                }
+            }
+        } 
+    } else {
+        if (a2!=0) {
+            if (b1!=0) {
+                y=c1/b1;
+                x=(c2-b2*y)/a2;
+            }
+        }
+        
+    }
+    if (x==0.0000001) {
+        cout << "Решений нет";
+    } else { if (y==0.0000001){
+        cout << "Решений нет";
+    }  else {
+    cout <<x <<" "<<y;
+    }
+    }
+    return 0;
+}
