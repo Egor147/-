@@ -1,0 +1,142 @@
+#include <iostream> //Задание №1
+
+
+using namespace std;
+
+int main()
+{
+    int a,b;
+    cin >>a >>b;
+    if (a==b) {
+        a=0;
+        b=0;
+    } else {
+        if (a>b) {
+            b=a;
+        } else a=b;
+    }
+    cout << a << " " << b;
+    return 0;
+}
+
+#include <iostream> //Задание №2
+
+
+using namespace std;
+
+int main()
+{
+    int a,b,c,s1,s2,s3;
+    cin >>a >> b >> c;
+    s1=a+b;
+    s2=a+c;
+    s3=b+c;
+    if (s1>s2 && s1>s3){
+        cout << s1;
+    }
+    if (s2>s1 && s2>s3){
+        cout << s2;
+    }
+    if (s3>s2 && s3>s1){
+        cout << s3;
+    }
+    return 0;
+}
+
+#include <iostream> //Задание №3
+#include <cmath>
+
+
+using namespace std;
+
+int main()
+{
+    double x1,y1,x2,y2,x3,y3;
+    cin >>x1>>y1>>x2>>y2>>x3>>y3;
+    double s1=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+    double s2=sqrt((x3-x1)*(x3-x1)+(y3-y1)*(y3-y1));
+    if (s1>s2) {
+        cout << "B расположена ближе. Расстояние= " << s1;    
+    } else {
+        cout <<"C расположена ближе. Расстояние= " << s2;  
+    }
+    return 0;
+}
+
+#include <iostream> //Задание №4
+using namespace std;
+
+int main()
+{
+    double x,y;
+    cin >>x>>y;
+    if (x>0){
+        if (y>0){
+            cout << "Точка находится в 1 четверти";
+        } else {
+            cout << "Точка находится в 4 четверти";
+        }
+    } else {
+        if (y>0) {
+            cout << "Точка находится во 2 четверти";
+        } else {
+            cout << "Точка находится в 3 четверти";
+        }
+    }
+    return 0;
+}
+
+#include <iostream> //Задание №5
+using namespace std;
+int main()
+{
+    int a;
+    cin >>a;
+    if (a>0){
+        cout << "Положительное ";
+        if (a%2==0) {
+            cout <<"чётное число";
+        } else {
+            cout <<"нечётное число";
+        }
+    } else{
+        if (a<0){
+            cout <<"Отрицательное ";
+            if (a%2==0) {
+            cout <<"чётное число";
+        } else {
+            cout <<"нечётное число";
+        } 
+        } else {
+            cout << "Нулевое число";
+        }
+    }
+    return 0;
+}
+
+#include <iostream> //Задание №6
+
+
+using namespace std;
+
+int main()
+{
+    int a;
+    cin >>a;
+    if (a%2==0){
+        cout << "Чётное(-ая) ";
+    } else{
+        cout << "Нечётное(-ая) ";
+    }
+    if (a>=0 && a<9) {
+            cout <<"цифра";
+        } else {
+            if (a>9 && a<99) {
+                cout <<"двузначное число";
+            }
+            if (a>99 && a<1000) {
+                cout <<"трёхзначное число";
+            }
+        }
+    return 0;
+}
