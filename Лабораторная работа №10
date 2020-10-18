@@ -1,0 +1,118 @@
+#include <iostream> //Задание №1
+
+using namespace std;
+
+int main()
+{
+    double a,b;
+    cin >>a >> b;
+    if (a>2 && b<=3) {
+        cout << "True";
+    } else {
+        cout << "false";
+    }
+    return 0;
+}
+
+#include <iostream> //Задание №2
+
+using namespace std;
+
+int main()
+{
+    double a,b,c;
+    cin >>a >> b >> c;
+    if (a<b && b<c) {
+        cout << "True";
+    } else {
+        cout << "false";
+    }
+    return 0;
+} 
+
+#include <iostream> //Задание №3
+
+using namespace std;
+
+int main()
+{
+    int a;
+    cin >>a;
+    if (a>9 && a<100 && a%2<1) {
+        cout << "True";
+    } else {
+        cout << "false";
+    }
+    return 0;
+}
+
+#include <iostream> //Задание №4
+
+using namespace std;
+
+int main()
+{
+    int a;
+    cin >>a;
+    if (a%10>(a/10)%10 && (a/10)%10>a/100){
+        cout << "True";
+    } else {
+        if (a%10<(a/10)%10 && (a/10)%10<a/100){
+            cout << "True";
+        } else {
+            cout << "False";
+        }
+    }
+    return 0;
+}
+
+#include <iostream> //Задание №5
+
+using namespace std;
+
+int main()
+{
+    int a;
+    cin >>a;
+    if (a/100==(a%10)*10 + (a%100)/10){
+        cout << "True";
+    } else {
+        cout << "False";
+    }
+    return 0;
+}
+
+#include <iostream> //Задание №6
+
+
+using namespace std;
+
+int main()
+{
+    int a,b,c;
+    cin >>a >>b >>c;
+    if (c*c==a*a+b*b || b*b==a*a+c*c || a*a==b*b+c*c){
+        cout << "True";
+    } else {
+        cout << "False";
+    }
+    
+    return 0;
+}
+
+#include <iostream> //Задание №7
+
+using namespace std;
+
+int main()
+{
+    int a,b,c;
+    cin >>a >>b >>c;
+    if (c<=a+b && a<=c+b && b<=c+a){
+        cout << "True";
+    } else {
+        cout << "False";
+    }
+    
+    return 0;
+}
